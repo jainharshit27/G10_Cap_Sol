@@ -16,9 +16,6 @@ class Thief:
     
     def draw_thief(self, surface):
         pygame.draw.rect(surface, (31,40,45), self.rect)
-    
-    def paste_image(self, image):
-        screen.blit(image, self.rect)
         
 pygame.init()
 screen = pygame.display.set_mode((400, 400))
