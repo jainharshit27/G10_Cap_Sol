@@ -1,8 +1,8 @@
 import pygame
 
 class Hurdle:
-    def __init__(self, x, y, h, w):
-        self.rect = pygame.Rect(x, y, h, w)
+    def __init__(self, x, y, w, h):
+        self.rect = pygame.Rect(x, y, w, h)
     
     def draw_hurdle(self, surface):
         pygame.draw.rect(surface, (255,0,0), self.rect)
@@ -11,8 +11,8 @@ class Hurdle:
         screen.blit(image, (self.rect.x, self.rect.y-14))
 
 class Thief:
-    def __init__(self, x, y, h, w):
-        self.rect = pygame.Rect(x, y, h, w)
+    def __init__(self, x, y, w, h):
+        self.rect = pygame.Rect(x, y, w, h)
     
     def draw_thief(self, surface):
         pygame.draw.rect(surface, (31,40,45), self.rect)
